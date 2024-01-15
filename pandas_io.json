@@ -1,0 +1,6 @@
+{
+        "url": "https://archive-api.open-meteo.com/v1/archive",
+        "prompt": "Don't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous. If no function fits the requirement, let the user know that this request isn't possible. Additionally, mention the closest function the user request is potentially similar to.",
+        "functions": [
+        ]
+}

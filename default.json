@@ -1,0 +1,6 @@
+{
+    "default": {
+        "description": "generate function descriptors (JSON format) from unstructured text, such as online tables",
+        "prompt": "I'm looking to parse text of various formats to extract useful information in structured forms. Parse text of various formats to extract function names, descriptions, parameters, description of parameters, requirement status, and data types. Format response using the JSON format. This is a sample response expected: [\n\t{\n\t\t\"name\": \"get_current_weather\",\n\t\t\"description\": \"Get the current weather\",\n\t\t\"parameters\": {\n\t\t\t\"type\": \"object\",\n\t\t\t\"properties\": {\n\t\t\t\t\"location\": {\n\t\t\t\t\t\"type\": \"string\",\n\t\t\t\t\t\"description\": \"The city and state, e.g.\t\tSan\t\tFrancisco, CA\"\n\t\t\t\t},\n\t\t\t\t\"format\": {\n\t\t\t\t\t\"type\": \"string\",\n\t\t\t\t\t\"enum\": [\"celsius\", \"fahrenheit\"],\n\t\t\t\t\t\"description\": \"The temperature unit to\t\t\tuse.\t\tInfer this from the users location.\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"required\": [\"location\", \"format\"]\n\t\t}\n\t}\n]"
+    }
+}
